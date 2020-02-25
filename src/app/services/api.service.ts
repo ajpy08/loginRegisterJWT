@@ -10,7 +10,7 @@ import { HttpHeaders } from '@angular/common/http';
 export class ApiService {
   constructor(private apollo: Apollo) {}
 
-  //Lista de usuarios
+  // Lista de usuarios
   getUsers() {
     return this.apollo
       .watchQuery({
@@ -24,6 +24,7 @@ export class ApiService {
       );
   }
 
+  // para loguearnos
   login(email: string, password: string) {
     return this.apollo
       .watchQuery({
